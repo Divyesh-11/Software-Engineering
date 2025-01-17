@@ -6,16 +6,12 @@ Lab 3: Delete a course with a specific course_id from the courses table using th
 */
 
 INSERT INTO
-    courses (
-        course_id,
-        course_name,
-        course_duration
-    )
+courses (course_id,course_name,course_duration)
 VALUES (101, "Master of commerce", 2),
-    (102, "Bachlor of commerce", 3),
-    (103, "Master of Arts", 2),
-    (104, "Bachlor of commerce", 3),
-    (105, "MBA", 3);
+       (102, "Bachlor of commerce", 3),
+	   (103, "Master of Arts", 2),
+       (104, "Bachlor of commerce", 3),
+       (105, "MBA", 3);
 
 UPDATE courses SET course_duration = 2 WHERE course_id = 105;
 

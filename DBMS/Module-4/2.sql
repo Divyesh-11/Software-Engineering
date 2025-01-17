@@ -6,4 +6,4 @@ Lab 1: Write SQL queries to retrieve specific columns (student_name and age) fro
 
 SELECT student_name,age FROM students;
 
-SELECT * FROM students WHERE age < 10; 
+SELECT * FROM students WHERE age > 10; 

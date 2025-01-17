@@ -1,5 +1,5 @@
 /*
-Introduction to SQL
+1. Introduction to SQL
  Lab 1: Create a new database named school_db and a table called students with the following columns: student_id, student_name, age, class, and address. 
  Lab 2: Insert five records into the students table and retrieve all records using the SELECT statement.
 */
@@ -11,8 +11,7 @@ CREATE TABLE students(
     student_name VARCHAR(25) NOT NULL,
     age INT NOT NULL,
     class VARCHAR(2) NOT NULL,
-    address VARCHAR(25) NOT NULL,
-    Foreign Key (student_id) REFERENCES TEACHERS(teacher_id)
+    address VARCHAR(25) NOT NULL
 );
 
 INSERT INTO students (student_id,student_name,age,class,address) VALUES
@@ -21,5 +20,3 @@ INSERT INTO students (student_id,student_name,age,class,address) VALUES
 (103,'BOBAY',23,'A','NEHRUNAGAR, AHMEDABAD'),
 (104,'MALIK',24,'A','CHANDKHEDA, AHMEDABAD'),
 (105,'ADITYA',26,'B','GOTA, AHMEDABAD');
-
-SELECT * FROM students;

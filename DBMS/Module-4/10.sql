@@ -13,7 +13,6 @@ INSERT INTO courses (course_id,course_name,course_duration) VALUES
 
 COMMIT;
 
-
 INSERT INTO courses (course_id,course_name,course_duration) VALUES
 (109,"BCA",3),
 (110,"M.TECH",2),
@@ -29,4 +28,19 @@ ROLLBACK;
 
 SELECT * FROM courses;
 
-TRUNCATE table courses;
+SAVEPOINT s1;
+INSERT INTO courses VALUES (112,'Cyber SEcurity','9');
+
+SAVEPOINT s2;
+INSERT INTO courses VALUES (113,'Designing','6');
+
+SAVEPOINT s3;
+INSERT INTO courses VALUES(114,'Hardware & Cloud','5');
+
+rollback to s1;
+
+SAVEPOINT  s4;
+
+UPDATE courses SET course_name = 'MCA' WHERE course_id = 108;
+
+ROLLBACK;

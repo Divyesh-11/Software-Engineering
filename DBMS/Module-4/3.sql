@@ -6,17 +6,15 @@ Lab 1: Create a table teachers with the following columns: teacher_id (Primary K
 
 CREATE DATABASE school_db;
 
-CREATE TABLE students(
-    student_id INT PRIMARY KEY,
-    student_name VARCHAR(25) NOT NULL,
-    age INT NOT NULL,
-    class VARCHAR(2) NOT NULL,
-    address VARCHAR(25) NOT NULL,
-    Foreign Key (student_id) REFERENCES TEACHERS(teacher_id)
-);
-
 CREATE TABLE TEACHERS(
     teacher_id int PRIMARY KEY,
     teacher_name VARCHAR(25) NOT NULL,
+    subject VARCHAR(15) NOT NULL,
     email VARCHAR(50) UNIQUE
 );
+
+ALTER TABLE students ADD teacher_id INT;
+
+ALTER TABLE students add foreign key (teacher_id) references teachers(teacher_id);
+
+SELECT * FROM students;
