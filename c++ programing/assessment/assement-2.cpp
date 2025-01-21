@@ -39,7 +39,7 @@ int main()
         case 1:
 
             cout << "\n1) Margherita Pizza = " << Marghrita_pizza << " INR ";
-            cout << "\n2)Seven Cheese pizza = " << Seven_Cheese_pizza << " INR ";
+            cout << "\n2) Seven Cheese pizza = " << Seven_Cheese_pizza << " INR ";
             cout << "\n3) Veg Spring pizza = " << Veg_Spring_pizza << " INR ";
             cout << "\n4) Party lover pizza = " << Party_lover_pizza << " INR ";
             cout << "\n5) Garden Feast pizza = " << Garden_Feast_pizza << " INR ";
@@ -116,7 +116,7 @@ int main()
         case 2:
 
             cout << "\n1) Veg Burger = " << veg_burger << " INR ";
-            cout << "\n2)Crunchy Veg Burger = " << Crunchy_Veg_Burger << " INR ";
+            cout << "\n2) Crunchy Veg Burger = " << Crunchy_Veg_Burger << " INR ";
             cout << "\n3) Cafe Special Burger = " << Cafe_Special_Burger << " INR ";
             cout << "\n4) Allo Tikki Burger = " << Allo_Tikki_Burger << " INR ";
             cout << "\n5) Lamb Burger = " << Lamb_Burger << " INR ";
@@ -421,9 +421,6 @@ int main()
                 break;
             }
             break;
-            // default :
-            //             cout<<"\nInvaild Input.";
-            // break;
         }
         cout << "\n\n Do You Want to Continue y/n ? : ";
         cin >> ans;
