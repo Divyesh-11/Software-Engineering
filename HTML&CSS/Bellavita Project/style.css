@@ -617,3 +617,8 @@ h1 {
     width: 400px;
     border: 1px solid black;
 }
+
+.carousel-item img{
+   margin-bottom: 40px;
+
+}
