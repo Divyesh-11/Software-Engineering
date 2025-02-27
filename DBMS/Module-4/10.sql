@@ -40,7 +40,6 @@ INSERT INTO courses VALUES(114,'Hardware & Cloud','5');
 rollback to s1;
 
 SAVEPOINT  s4;
-
 UPDATE courses SET course_name = 'MCA' WHERE course_id = 108;
 
 ROLLBACK;
