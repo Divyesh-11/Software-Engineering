@@ -1,5 +1,0 @@
-
-Hello world ! 
-This is my first file in c++ language.
-c++ language is object orianted proggraming language.
-c++ language is advance version of c language.

@@ -1,3 +1,0 @@
-This is my secound file in c++ language.
-c++ language is fastes for c language.
-c++ language is memroy adjusteble language.
